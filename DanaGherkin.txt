@@ -1,0 +1,83 @@
+Feature: Adaugare produse in cos
+Scenario 1: Utilizatorul poate adauga un produs in cos
+Given: Utilizatorul se afla in sectiunea:Uscătoare de păr/ Îngrijire Personală /Catalog/www.ultra.md
+When: Utilizatorul da click pe produsul " Uscător de păr Dyson HD07, 1600W, Fucsie"
+And: Utilizatorul da click pe butonul “Adauga in cos”
+Then : Produsul este plasat in cos
+And:Utilizatorul  trebui sa vada textul: "Produs adaugat in cos"
+And:Utilizatorul trebuie sa vada textul "Vezi cosul" in loc de "Adauga in cos"
+
+Given: Utilizatorul se afla in sectiunea: Frigidere/ Electrocasnice mari pentru bucatarie/Catalog/www.ultra.md
+When: Utilizatorul Selectteaza selecteaza produsul Frigider Sharp SJBA31DHDAEEU, Negru
+And: Utilizatorul face click pe pictograma “ Cos de cumparaturi”
+Then : Produsul este plasat in cos
+And:Utilizatorul  trebui sa vada textul :"Produs adaugat in cos"
+
+
+Given: Utilizatorul se afla pe pagina web: www.ultra.md
+When: Utilizatorul tapeaza in casuta"Cauta produse" :"fierbator"
+AND: Utilizatorul face click pe pictograma "Search"
+And: Utilizatorul selectioneaza Fierbător electric Tefal KI583C10, Bronz si  face click pe pictograma “ Cos de cumparaturi” 
+Then : Produsul este plasat in cos 
+And:Utilizatorul  trebui sa vada textul :"Produs adaugat in cos"
+
+Given: Utilizatorul se afla in sectiunea Drone/ Jucarii pentru copii/Lumea copiilor/Catalog/www.ultra.md
+When: Utilizatorul Selectteaza  produsul Dronă Syma X20-S, Alb
+And: Utilizatorul face click pe pictograma “ Cos de cumparaturi”
+Then : Produsul este plasat in cos
+And:Utilizatorul  trebui sa vada textul :"Produs adaugat in cos"
+
+Given: Utilizatorul se afla in sectiunea  Imprimare și Scanere / Imprimante Multifuncționale/Catalog/www.ultra.md
+When: Utilizatorul da click pe produsul "Multifunctional Inkjet Epson L8160, Alb "
+And: Utilizatorul da click pe butonul “Adauga in cos”
+Then : Produsul este plasat in cos
+And:Utilizatorul  trebui sa vada textul: "Produs adaugat in cos"
+And:Utilizatorul trebuie sa vada textul "Vezi cosul" in loc de "Adauga in cos"
+
+Given: Utilizatorul se afla in sectiunea Catalog/Smartphone-uri si gadget-uri/ Accesorii Telefoane Mobile / Huse pentru tablete/www.ultra.md
+And: Utilizatorul da click in casuta "Samsung" in sectiunea "Brand" 
+And: Utilizatorul ruleaza cu mouse-ulu in jos pe pagina da click pe butonul" Mai multe"
+When: Utilizatorul da click pe produsul " Husă pentru tabletă Samsung Tab S6 Lite Book Cover, 10.4", Poliuretan, Roz"
+And: Utilizatorul da click pe butonul “Adauga in cos”
+Then : Produsul este plasat in cos
+And:Utilizatorul  trebui sa vada textul: "Produs adaugat in cos"
+And:Utilizatorul trebuie sa vada textul "Vezi cosul" in loc de "Adauga in cos"
+
+
+Given: Utilizatorul se afla pe pagina web: www.ultra.md
+When: Utilizatorul tapeaza in casuta"Cauta produse" :"Aparate de aer condiționat"
+AND: Utilizatorul face click pe pictograma "Search"
+And: Utilizatorul selectioneaza produsul: Sistem Split Samsung AR9500T WindFree Geo, 18kBTU/h, Alb,si  face click pe pictograma “ Cos de cumparaturi” 
+Then : Produsul este plasat in cos 
+And:Utilizatorul  trebui sa vada textul :"Produs adaugat in cos"
+
+
+Given: Utilizatorul se afla pe pagina web: www.ultra.md
+When: Utilizatorul tapeaza in casuta"Cauta produse" :"Storcator de fructe"
+AND: Utilizatorul face click pe pictograma "Search"
+And: Utilizatorul selectioneaza produsul: "Storcător de fructe și legume Tefal ZC420E38, Negru Inox" si face click pe pictograma “ Cos de cumparaturi” 
+Then : Produsul este plasat in cos 
+And:Utilizatorul  trebui sa vada textul :"Produs adaugat in cos"
+
+
+Scenario 2: Utilizatorul nu poate adauga un produs in cos
+Given: Utilizatorul se afla in sectiunea:Laptopuri/ Laptopuri și Desktop PC /Computere/Catalog/www.ultra.md
+And: Utilizatorul da click in casuta "Apple" in sectiunea "Brand" 
+When: Utilizatorul da click pe produsul "Laptop 16,2" Apple MacBook Pro 16 A2780, Gri cosmic, M2 Pro with 12-core CPU and 19-core GPU, 16GB/1024GB, macOS Ventura "
+And: Utilizatorul da click pe butonul “Adauga in cos”
+Then : Produsul este plasat in cos
+And:Utilizatorul  trebui sa vada textul: "Produs adaugat in cos"
+Then: Utilizatorul face click in "Cosul cu cumparaturi"
+And: Utilizatorul intentioneaza sa schimbe cantitatea produsului face click pe pictograma "+"
+And: Produsul nu este adaugat in cos
+
+
+Given: Utilizatorul se afla pe pagina web: www.ultra.md
+When: Utilizatorul tapeaza in casuta"Cauta produse" :SONY PlayStation 5,""
+AND: Utilizatorul face click pe pictograma "Search"
+And: Utilizatorul selectioneaza produsul: Consolă de jocuri SONY PlayStation 5, Alb, "Uncharted: Legacy of Thieves Collection", "God of War Ragnarök"
+Then : Produsul este plasat in cos 
+And:Utilizatorul  trebui sa vada textul: "Produs adaugat in cos"
+Then:Utilizatorul  face click in "Cosul cu cumparaturi"
+And: Utilizatorul intentioneaza sa schimbe cantitatea produsului face click pe pictograma "+"
+And: Produsul nu este adaugat in cos.
