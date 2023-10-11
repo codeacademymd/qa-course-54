@@ -1,0 +1,39 @@
+FEATURE : Cosul de cumparaturi
+Scenario 1 : Utilizatorul poate plasa cumparaturile in cos cu diverse produse.
+
+GIVEN: Utilizatorul se afla pe pagina Tabletă Samsung Galaxy Tab S9+
+AND : Utilizatorul este logat.
+WHEN: Utilizatorul apasa pe iconita "Adauga in cos"
+THEN : Produsul ar trebui sa apara in "Cosul de cumparaturi"
+
+GIVEN : Utilizatorul se afla pe pagina Canon Scanner DR-6010C, A4, Alb
+AND: Utilizatorul este logat
+WHEN: Utilizatorul apasa pe iconita "Adauga in cos"
+THEN : Produsul ar trebui sa apar in "Cosul de cumparaturi"
+
+GIVEN : Utilizatorul se afla pe pagina Priză inteligentă Yandex YNDX-0007B
+AND: Utilizatorul este logat
+WHEN : Utilizatorul apasa pe iconita "Adauga in cos"
+THEN : Produsul ar trebui sa apar in "Cosul de cumparaturi"
+
+
+Scenario 2: Utilizatorul poate adauga 2 sau mai multe produse in "cosul de cumapraturi"
+Given : Utilizatorul se afla pe pagina "cosul meu"
+AND : Utilizatorul a adaugat in cos produsul "Smartphone Huawei Nova 9, 8GB/128GB, Negru"
+WHEN : Utilizatorul face click pe iconita "Plus" pentru a mai adauga un produs
+THEN : Utilizatorul ar trebui sa aiba 2 produse in cosul de cumparaturi.
+
+Scenario 2: Utilizatorul poate adauga 2 sau mai multe produse in "cosul de cumapraturi" de acelasi fel.
+Given : Utilizatorul se afla pe pagina "cosul meu"
+AND : Utilizatorul a adaugat in cos produsul "Amplificator pentru mașină JBL Club A600"
+WHEN : Utilizatorul face click pe iconita "Plus" pentru a mai adauga un produs
+THEN : Utilizatorul ar trebui sa aiba 2 produse de acelasi fel in cosul de cumparaturi.
+
+Scenario 3 : Utilizatorul poate adauga 2 produse diferite in cosul de cumparaturi
+GIVEN : Utilizatorul se afla pe site
+AND : Utilizatorul este logat
+WHEN: Utilizatorul a adaugat in cos produsul "Modulator FM Forever TR-330, Negru"
+AND : Utilizatorul a adaugat in cos produsul "Bicicletă cu trei roți Kikka Boo Xammy, Negru"
+THEN : Utilizatorul ar trebui sa aiba 2 produse diferite in cosul de cumparaturi
+
+

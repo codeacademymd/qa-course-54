@@ -1,0 +1,36 @@
+Test Incident ID: BR_2039
+Summary: User cannot setup payment method
+Description: User cannot save after setup the PayPal payment method on www.utest.com website
+Pre-conditions: 
+•	Internet connection
+•	Device connected to power source
+•	Operating System
+•	Browser
+•	Existing uTest Account and Logged in (Login: testaccount, Password: testpass)
+Environment: Production environment -> www.utest.com -> set in english
+Steps to reproduce:
+1.	Turn on the device
+2.	Connect to Internet
+3.	Open Browser
+4.	Type in search bar: www.utest.com
+5.	Press “Enter” key
+6.	Navigate to drop down list icon on the right side of the user name, on the left side of the page
+7.	Click the drop-down list button
+8.	Click “Payments” option
+9.	Navigate to “Setup” button
+10.	Click “Setup” button
+11.	Select “PayPal” option
+12.	Select “Yes” option
+13.	Select the “PayPal email address” placeholder
+14.	Type “testemail@gmail.com” in the placeholder
+15.	Click “Save” button
+Expected Result: User can setup PayPal payment method
+Actual Result: User cannot setup PayPal payment method
+Attachment: BR_2039.jpg
+Attempts to Repeat: 0
+Name of QA: Maria Bogdanovici
+Name of Developer: Dumitru Slonovschi
+Date & Time: 11.10.2023 20:53
+Severity: 3 of 3
+Priority: 3 of 3
+
